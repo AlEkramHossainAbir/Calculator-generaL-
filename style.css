@@ -9,7 +9,7 @@ body{
 
 .Full_box{
     width: 417px;
-    margin:0 auto;
+    margin:25px auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 
@@ -19,22 +19,24 @@ body{
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
 .Header_box input{
-    background-color: whitesmoke;
-    border:1px solid rgb(15, 175, 250);
+    background-color: rgba(144, 151, 151, 0.699);
+    border:1px solid rgb(130, 204, 238);
     height: 100px;
     width: 405px;
     font-size: 32px;
     font-weight: bold;
+    color: black;
     text-align: right;
     padding: 0 5px;
     letter-spacing: 3px;
 }
+
 /*.Footer_box{
     background-color: rgba(1, 11, 14, 0.233);
     height: 450px;
 }*/
 .button input{
-    background-color: #1f2623;
+    background-color: #161817;
     padding: 25px;
     font-size: 30px;
     font-weight: bold;
@@ -50,6 +52,15 @@ body{
     box-shadow: 0 32px 64px 0 rgba(241, 238, 238, 0.2);
     background-color: rgb(214, 90, 110);
 }
+.button div input{
+    background-color: #060125;
+}
+
+.button div input:hover{
+    box-shadow: 0 32px 64px 0 rgba(241, 238, 238, 0.2);
+    background-color: #3f93e2;;
+}
+
 /*.button div{
     
     border:1.5px solid rgba(231, 233, 245, 0.329);
@@ -61,3 +72,6 @@ body{
     float: left;
     padding-top: 21px;
 }*/
+.js{
+    background-color:rgb(0, 0, 3);
+}

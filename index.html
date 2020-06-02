@@ -11,40 +11,55 @@
  
         <div class="Full_box">
             <div class="Header_box">
-                <input type="text" id="result" maxlength="10">  <!--maxlength is for maximum character-->
+                <input type="text" id="result" maxlength="10"> <!--maxlength is for maximum character-->
             </div>
             <div class="Footer_box">
                 <div class="button">
                         <!--<input type="button" value="%">-->
-                        <input type="button" value="√">
+                        <input type="button" onclick="sqrt()" value="√">
                       <!-- <input type="button" value="x^2">--> 
                         <!--<input type="button" value="1/x">--> 
-                        <input type="button" value="AC">
-                        <input type="button" value="CE">
+                        <input type="button" onclick="clearAll()" value="AC">
+                        <input type="button" onclick="lastDigit()" value="CE">
                         <!--<input type="button" value="⌫">-->
-                        <input type="button" style="background-color: #8f5a5a;" value="÷">
-                        <input type="button" value="7">
-                        <input type="button" value="8">
-                        <input type="button" value="9">
-                        <input type="button" style="background-color: #8f5a5a;;" value="×">
-                        <input type="button" value="4">
-                        <input type="button" value="5">
-                        <input type="button" value="6">
-                        <input type="button" style="background-color: #8f5a5a;" value="-">
-                        <input type="button" value="1">
-                        <input type="button" value="2">
-                        <input type="button" value="3">
-                        <input type="button" style="background-color: #8f5a5a;" value="+">                       
-                        <input type="button" value=".">
-                        <input type="button" value="0">
-                        <input type="button" value="±">
-                        <input type="button" style="background-color: #738d5e;" value="=">
-
+                        <div>
+                            <input type="button" onclick="insert('/')" value="÷">
+                        </div>
+                        
+                        <input type="button" onclick="insert(7)" value="7">
+                        <input type="button" onclick="insert(8)" value="8">
+                        <input type="button" onclick="insert(9)" value="9">
+                        <div>                            
+                        <input type="button" onclick="insert('*')" value="X">
+                        </div>
+                        <input type="button" onclick="insert(4)" value="4">
+                        <input type="button" onclick="insert(5)" value="5">
+                        <input type="button" onclick="insert(6)" value="6">
+                        <div>
+                             <input type="button" onclick="insert('-')"  value="-">
+                        </div>
+                       
+                        <input type="button" onclick="insert(1)" value="1">
+                        <input type="button" onclick="insert(2)" value="2">
+                        <input type="button" onclick="insert(3)" value="3">
+                        <div>
+                             <input type="button" onclick="insert('+')"  value="+">   
+                        </div>
+                                           
+                        <input type="button" onclick="insert('.')" value=".">
+                        <input type="button" onclick="insert(0)" value="0">
+                        <input type="button" onclick="posneg()" value="±">
+                        <div id="equal">
+                            <input type="button"  value="="  onclick="calculate()">
+                        </div>
+                
                 </div>
 
             </div>
 
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>
